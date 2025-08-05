@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Naan Mudhalvan - Divya Sri</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      padding: 20px;
+    }
+
+    .resume-container {
+      display: flex;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .left-panel {
+      width: 35%;
+      background: #e6ecf0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .left-panel img.profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .left-panel h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .left-panel p {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .left-panel h2 {
+      margin-top: 20px;
+      font-size: 16px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .left-panel ul {
+      list-style-type: disc;
+      margin: 10px 0 0 20px;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .right-panel {
+      width: 65%;
+      padding: 20px;
+    }
+
+    .right-panel section {
+      margin-bottom: 25px;
+    }
+
+    .right-panel h2 {
+      font-size: 18px;
+      color: #2c3e50;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .right-panel p, .right-panel ul {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .right-panel ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .download-btn {
+      display: block;
+      margin: 30px auto 0;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media print {
+      .download-btn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-container">
+    <div class="left-panel">
+      <img src="Photo.jpg.jpg" alt="Divya Sri" class="profile-img">
+      <h1>DIVYA SRI</h1>
+      <p>📞 7094529181</p>
+      <p>📧 divyasri@srmist.ac.in</p>
+
+      <h2>EDUCATION</h2>
+      <ul>
+        <li>SSLC</li>
+        <li>HSE(+1)</li>
+        <li>HSE(+2)</li>
+      </ul>
+
+      <h2>SKILLS</h2>
+      <ul>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C++</li>
+      </ul>
+
+      <h2>LANGUAGE</h2>
+      <ul>
+        <li>Tamil</li>
+        <li>English</li>
+        <li>Japanese</li>
+      </ul>
+    </div>
+
+    <div class="right-panel">
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Passionate and curious second-year college student with a strong interest in technology and web development.
+          Quick learner with a foundation in HTML, CSS, and JavaScript, eager to gain real-world experience.
+        </p>
+      </section>
+
+      <section>
+        <h2>Expertise</h2>
+        <ul>
+          <li>Communication Skills</li>
+          <li>Team Collaboration</li>
+          <li>Problem Solving</li>
+          <li>Critical Thinking</li>
+          <li>Basic Programming</li>
+          <li>Presentation Skill</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Hobbies and Interests</h2>
+        <ul>
+          <li>Web Designing</li>
+          <li>Drawing</li>
+          <li>Reading Tech Blogs</li>
+          <li>Listening to Music</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <button class="download-btn" onclick="downloadResume()">Download / Print Resume</button>
+
+  <script>
+    function downloadResume() {
+      window.print();
+    }
+  </script>
+</body>
+</html>
